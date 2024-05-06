@@ -212,9 +212,18 @@ class _HomePageState extends State<HomePage> {
                                         height: 150,
                                         child: Image.asset(
                                           'images/auth_news1.png',
-                                          // width: 295,
-                                          // height: 160,
-                                          // fit: BoxFit.contain,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 10,
+                                        left: 10,
+                                        child: Text(
+                                          'Mubazir Makanan di Indonesia \nTinggi, Butuh Penanganan \nMenyeluruh',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -236,17 +245,28 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: [
                                 Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Container(
-                                    width: 290,
-                                    height: 150,
-                                    child: Image.asset(
-                                      'images/auth_news2.png',
-                                    ),
-                                    decoration: BoxDecoration(
-                                      color: Color(0xff7280CE),
-                                      borderRadius: BorderRadius.circular(15),
-                                    ),
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        width: 290,
+                                        height: 150,
+                                        child: Image.asset(
+                                          'images/auth_news2.png',
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 10,
+                                        left: 10,
+                                        child: Text(
+                                          'Bagaimana Limbah Makanan \nMemperparah Perubahan Iklim \ndan Pemanasan Global',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
